@@ -1,0 +1,41 @@
+<!-- form and input tag -->
+<!doctype>
+	<html>
+	<head>
+		<title>input tag</title>
+	</head>
+	<body>
+		<h1>Result Table</h1>
+    <table border="1">
+      <tr>
+        <th>Name</th>
+        <th>Adhaar no</th>
+        <th>address</th>
+      </tr>
+      <tr>
+      	<td id="1">no data</td>
+      	<td id="12" >no data</td>
+      	<td id="123">no data</td>
+      </tr>
+
+		<form>
+	<label for="name">enter your name</label>
+			<input type="text" id="name"/><br>
+	<label for="aadhar">enter you aadhar no</label>
+		<input type="number" id="aadhar"/><br>
+	<label for="address">enter your address</label>		
+		<input type="text" id="address"/><br>
+	</form>
+		<button onclick="readdata()"> submit</button>
+		<script>
+			function readdata() {
+				var a=document.getElementById('name').value;
+				var b=document.getElementById('aadhar').value;
+				var c=document.getElementById('address').value;
+				document.getElementById('1').innerHTML=a;
+				document.getElementById('12').innerHTML=b;
+				document.getElementById('123').innerHTML=c;
+			}
+		</script>
+	</body>
+	</html>

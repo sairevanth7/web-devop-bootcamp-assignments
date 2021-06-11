@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+   <head>
+  <title> select tag</title>
+  <style>
+    p {
+      color: red;
+    }
+  </style>
+  </head>
+  <body>
+    <label>Choose your favorite color</label>
+    <select id="color">
+           <option>--select--</option>
+           <option>pink</option>
+           <option>red</option>
+           <option>green</option>
+           <option>blue</option>
+           <option>yellow</option>
+           <option>violet</option>
+    </select>
+    <button onclick="readData()">submit</button>
+    <p id="result"></p>
+    <script>
+      function readData() {
+        var c=document.getElementById('color').value;
+
+        document.getElementById('result').innerHTML=c;
+
+      }
+    </script>
+    </body>
+</html>
